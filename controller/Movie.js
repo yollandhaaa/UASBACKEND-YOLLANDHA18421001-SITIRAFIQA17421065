@@ -7,7 +7,7 @@ const { deleteImage } = require('../uploadConfig')
 exports.insertMovie = (data) =>
   new Promise((resolve, reject) => {
     movieModel.create(data)
-      .then(() => resolve(requestResponse.sukses('Berhasi Input Movie')))
+      .then(() => resolve(requestResponse.sukses('Berhasi Input Baju')))
       .catch(() => reject(requestResponse.serverError))
   })
 
@@ -51,7 +51,7 @@ exports.edit = (data, id, changeImage) =>
         _id: objectId(id)
       }).then(() => {
         deleteImage(movie.image)
-        resolve(requestResponse.sukses('berhasil delete movie'))
+        resolve(requestResponse.sukses('berhasil delete baju'))
       }).catch(() => reject(requestResponse.serverError))
     })
   })

@@ -38,7 +38,7 @@ router.put('/konfirmasiorder/:id', (req, res) => {
     .catch((err) => res.json(err))
   })  
 
-  router.put('/termiabarang/:id', (req, res) => {
+  router.put('/terimabarang/:id', (req, res) => {
     orderController.terimaBarang(req.params.id)
       .then(result => res.json(result))
       .catch((err) => res.json(err))

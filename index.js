@@ -5,7 +5,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const path = require('path')
 
-const mongoURL = 'mongodb://localhost:27017/yollamovieapp'
+const mongoURL = 'mongodb://localhost:27017/tokobajufiqyol'
 mongoose.connect(mongoURL, {
   useCreateIndex: true,
   useNewUrlParser: true,
@@ -32,9 +32,9 @@ app.use(bodyParser.urlencoded({
 // list route
 
 app.use('/user', require('./routes/User'))
-app.use('/movie', require('./routes/Movie'))
+app.use('/baju', require('./routes/Movie'))
 app.use('/order', require('./routes/Order'))
 
 app.listen(5000, () => {
-  console.log('server telah dijalankan di port 5000 oke yolla')
+  console.log('server telah dijalankan di port 5000 sipsipsippp')
 })

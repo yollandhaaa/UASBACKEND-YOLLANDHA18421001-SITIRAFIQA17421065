@@ -2,17 +2,16 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const MovieSchema = new Schema({
-  judulFilm: {
+  namaBaju: {
     type: String
   },
   harga: {
     type: Number
   },
-  tahun: {
+  warna: {
     type: String,
-    default: '2020'
   },
-  genre: {
+  ukuran: {
     type: String    
   },
   rating: {
